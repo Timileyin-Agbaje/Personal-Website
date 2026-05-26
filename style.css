@@ -1,10 +1,18 @@
 body {
     display: grid;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100svh;
     background-color: #0f0f0f;
     color: #e5e5e5;
-    margin-top: 100px;
+    margin: 0;
+    padding: 32px 20px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    max-width: 680px;
 }
 
 img {
@@ -47,8 +55,20 @@ a {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .links-p {
     text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
