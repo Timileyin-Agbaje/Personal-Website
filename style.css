@@ -1,10 +1,14 @@
+html {
+    font-family: "Inter";
+}
+
 body {
     display: grid;
     justify-content: center;
     min-height: 100vh;
     min-height: 100svh;
-    background-color: #0f0f0f;
-    color: #e5e5e5;
+    background-color: #000000;
+    color: #fff;
     margin: 0;
     padding: 32px 20px;
     box-sizing: border-box;
@@ -62,9 +66,35 @@ a {
     text-decoration: underline;
 }
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-in {
+    opacity: 0;
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
 @media (max-width: 480px) {
     body {
         padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.4;
     }
 
     .links {
