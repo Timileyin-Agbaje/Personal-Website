@@ -1,9 +1,13 @@
+html {
+    font-family: "Inter";
+}
+
 body {
     display: grid;
     justify-content: center;
     height: 100vh;
-    background-color: #0f0f0f;
-    color: #e5e5e5;
+    background-color: #000000;
+    color: #fff;
     margin-top: 100px;
 }
 
@@ -51,4 +55,31 @@ a {
 
 .links-p {
     text-decoration: underline;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-in {
+    opacity: 0;
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
 }
