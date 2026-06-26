@@ -4,11 +4,27 @@ html {
 
 body {
     display: grid;
-    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-color: #000000;
-    color: #fff;
-    margin-top: 100px;
+    background-color: #0a0a0a;
+    color: #ededed;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    padding: 10px;
 }
 
 img {
@@ -16,6 +32,14 @@ img {
     width: 50px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.Projects {
+    margin-bottom: 50px;
+}
+
+.Writing {
+    margin-bottom: 50px;
 }
 
 .top-span {
@@ -55,6 +79,11 @@ a {
 
 .links-p {
     text-decoration: underline;
+}
+
+.hr {
+    width: 100%;
+    font-weight: 200;
 }
 
 @media (max-width: 480px) {
