@@ -17,14 +17,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+    padding: 32px 20px;
+    box-sizing: border-box;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 50%;
-    padding: 10px;
+    width: 100%;
+    max-width: 680px;
 }
 
 img {
@@ -75,6 +79,7 @@ a {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .links-p {
@@ -87,11 +92,21 @@ a {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 24px 16px;
+    }
+
     h1 {
         font-size: 22px;
     }
+
     p {
         font-size: 15px;
         line-height: 1.4;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
