@@ -4,6 +4,18 @@ html {
 
 body {
     display: grid;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a0a0a;
+    color: #ededed;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+    display: flex;
+    align-items: center;
     justify-content: center;
     min-height: 100vh;
     min-height: 100svh;
@@ -24,6 +36,14 @@ img {
     width: 50px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.Projects {
+    margin-bottom: 50px;
+}
+
+.Writing {
+    margin-bottom: 50px;
 }
 
 .top-span {
@@ -66,21 +86,9 @@ a {
     text-decoration: underline;
 }
 
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-in {
-    opacity: 0;
-    animation: fadeUp 0.8s ease-out forwards;
+.hr {
+    width: 100%;
+    font-weight: 200;
 }
 
 @media (max-width: 480px) {
