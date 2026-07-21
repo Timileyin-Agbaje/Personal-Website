@@ -2,7 +2,6 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <body>
         <main className="container">
               <h1 className="heading">Timileyin Agbaje</h1>
               <p className="text">
@@ -23,6 +22,5 @@ export default function Home() {
               <img alt="Projects Under Construction" className="SVG" src="img/building-in-progress-crane-tight.svg" />
               <h2 className="sub-heading" >Writing</h2>
         </main>
-     </body>
   );
 }
