@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const person = {
   "@context": "https://schema.org",
@@ -94,6 +96,8 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
+        <Analytics />
+        <SpeedInsights />
         {children}</body>
     </html>
   );
