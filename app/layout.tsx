@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Timileyin Agbaje",
+  jobTitle: "Software Engineer",
+  sameAs: [
+    "https://github.com/Timileyin-Agbaje",
+    "https://x.com/timileyinagba",
+    "https://www.linkedin.com/in/timileyin-agbaje-1b6200396?",
+  ],
+};
 
 export const metadata: Metadata = {
   metadataBase: new
@@ -81,7 +92,9 @@ export default function RootLayout({
       lang="en"
       className={`h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
+        {children}</body>
     </html>
   );
 }

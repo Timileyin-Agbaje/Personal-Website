@@ -7,7 +7,7 @@ export default function Home() {
               <p className="text">
                   I am a CS undergrad building AI driven products across modern web
                   frameworks, backend systems and cloud infrastructure. Reach out
-                  to me to talk Tech, AI, Football or anything else.
+                  to me to talk Technical Blogs and the latest advancements in AI or anything else.
                   <br />
                   I am active on:
               </p>
