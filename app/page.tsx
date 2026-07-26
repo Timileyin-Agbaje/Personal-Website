@@ -19,7 +19,7 @@ export default function Home() {
               </nav>
               <h2 className="sub-heading">Projects</h2>
               <p className="sub-text">Coming soon...</p>
-              <img alt="Projects Under Construction" className="SVG" src="img/building-in-progress-crane-tight.svg" />
+              <Image alt="Projects Under Construction" className="SVG" src="img/building-in-progress-crane-tight.svg" />
               <h2 className="sub-heading" >Writing</h2>
         </main>
   );
