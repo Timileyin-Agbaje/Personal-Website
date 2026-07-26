@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Timileyin Agbaje",
     images: [
       {
-        url: "img/og-image.png",
+        url: "img/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Timileyin's Website"
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Timileyin Agbaje",
     description: "Personal Website of Timileyin Agbaje",
     creator: "@timileyinagba",
-    images: ["img/og-image.png"]
+    images: ["img/og-image.jpg"]
   },
 
   alternates: {
