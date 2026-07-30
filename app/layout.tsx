@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     icon: "favicon.ico"
   },
 
-  manifest: "/site.webmanifest",
+
 
   category: "technology"
 };
