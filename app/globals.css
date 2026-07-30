@@ -49,6 +49,11 @@
     text-underline-offset: 5px;
 }
 
+.link:focus-visible {
+    text-decoration-color: #1c1c1c;
+    text-underline-offset: 7px;
+}
+
 .links {
     display: flex;
     flex-direction: row;
