@@ -13,14 +13,14 @@ export default function Home() {
               </p>
               <nav aria-label="Social-Links" className="links">
                   <a className="link" href="https://x.com/timileyinagba" target="_blank" rel="noopener noreferrer">X</a>
-                  <a className="link" href="https://www.linkedin.com/in/timileyin-agbaje-1b6200396?" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a className="link" href="https://www.linkedin.com/in/timileyin-agbaje" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                   <a className="link" href="https://github.com/Timileyin-Agbaje" target="_blank" rel="noopener noreferrer">Github</a>
                   <a className="link" href="mailto:timi.agbaje.mail@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
               </nav>
               <h2 className="sub-heading">Projects</h2>
               <p className="sub-text">Coming soon...</p>
-              <Image width={100} height={100} alt="Projects Under Construction" className="SVG" src="img/building-in-progress-crane-tight.svg" />
-              <h2 className="sub-heading" >Writing</h2>
+              <Image width={88} height={100} alt="Projects Under Construction" className="SVG" src="img/building-in-progress-crane-tight.svg" />
+      <h2 className="sub-heading">Writing</h2>
         </main>
   );
 }
