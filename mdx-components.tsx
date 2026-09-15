@@ -1,7 +1,14 @@
 import type { MDXComponents } from "mdx/types";
 
 const components: MDXComponents = {
-  p: ({ children }) => <p className="article-paragraph">{children}</p>,
+  p: ({ children, className, ...props }) => (
+    <p
+      {...props}
+      className={["article-paragraph", className].filter(Boolean).join(" ")}
+    >
+      {children}
+    </p>
+  ),
 };
 
 export function useMDXComponents(): MDXComponents {
