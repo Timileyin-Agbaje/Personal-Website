@@ -1,0 +1,18 @@
+import { ArticleHeader } from "@/components/writing/article-header";
+import { formatPublishedDate, introduction } from "@/content/writing";
+
+export const metadata = {
+  title: introduction.title,
+  description: introduction.description,
+  alternates: { canonical: `/writing/${introduction.slug}` },
+};
+
+<main className="container article">
+  <a className="link article-back" href="/writing">← Writing</a>
+  <ArticleHeader
+    title={introduction.title}
+    publishedAt={formatPublishedDate(introduction.publishedAt)}
+  />
+
+  Hello I'm Timileyin Agbaje.
+</main>
