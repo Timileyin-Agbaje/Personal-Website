@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,6 +22,17 @@ export default function Home() {
               <p className="sub-text">Coming soon...</p>
               <Image width={88} height={100} alt="Projects Under Construction" className="SVG" src="img/building-in-progress-crane-tight.svg" />
       <h2 className="sub-heading">Writing</h2>
+      <section aria-label="Latest writing" className="writing-preview">
+        <article>
+          <h3 className="writing-title">
+            <Link href="/writing/introduction">Introduction</Link>
+          </h3>
+          <p className="writing-date">September 15, 2026</p>
+        </article>
+        <Link className="link writing-all" href="/writing">
+          View all writing →
+        </Link>
+      </section>
         </main>
   );
 }
