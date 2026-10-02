@@ -33,7 +33,7 @@ export default function Home() {
           <p className="writing-date">{formatPublishedDate(latestPost.publishedAt)}</p>
         </article>
         <Link className="link writing-all" href="/writing">
-          View all writing →
+          View all writing <span className="arrow" aria-hidden="true">→</span>
         </Link>
       </section>
     </main>
